@@ -11,3 +11,5 @@ Differences from Core Project
 
 Plugins
 -------
+
+* Spock
