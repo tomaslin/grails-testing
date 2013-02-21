@@ -9,6 +9,8 @@ grails.project.source.level = 1.6
 //   run: [maxMemory:1024, minMemory:64, debug:false, maxPerm:256]
 //]
 
+def seleniumVersion = '2.30.1'
+
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
@@ -28,6 +30,7 @@ grails.project.dependency.resolution = {
 
         mavenLocal()
         mavenCentral()
+        mavenRepo "http://download.java.net/maven/2/"
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://snapshots.repository.codehaus.org"
@@ -38,8 +41,12 @@ grails.project.dependency.resolution = {
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-
+        test 'co.freeside:betamax:1.1.2'
         test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
+        test "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
+        test "org.seleniumhq.selenium:selenium-ie-driver:$windowsSeleniumVersion"
+        test "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
+        test "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
 
         // runtime 'mysql:mysql-connector-java:5.1.20'
     }
@@ -59,6 +66,15 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.2.1"
 
         compile ':cache:1.0.1'
+
+        test ":build-test-data:2.0.4"
+        test ":codenarc:0.18"
+        test ":fixtures:1.2"
+        test ":functional-test-development:0.9.4"
+        test ":geb:0.9.0-RC-1"
+        test ":greenmail:1.3.4"
+        test ":guard:1.0.7"
+        test ":remote-control:1.4"
 
         test(":spock:0.7") {
             exclude "spock-grails-support"
