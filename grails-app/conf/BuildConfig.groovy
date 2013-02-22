@@ -9,7 +9,7 @@ grails.project.source.level = 1.6
 //   run: [maxMemory:1024, minMemory:64, debug:false, maxPerm:256]
 //]
 
-def seleniumVersion = '2.30.1'
+def seleniumVersion = '2.30.0'
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -44,7 +44,7 @@ grails.project.dependency.resolution = {
         test 'co.freeside:betamax:1.1.2'
         test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
         test "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
-        test "org.seleniumhq.selenium:selenium-ie-driver:$windowsSeleniumVersion"
+        test "org.seleniumhq.selenium:selenium-ie-driver:$seleniumVersion"
         test "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
         test "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
 

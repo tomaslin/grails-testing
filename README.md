@@ -12,4 +12,14 @@ Differences from Core Project
 Plugins
 -------
 
-* Spock
+* Betamax 1.1.2
+* Build Test Data 2.0.4 
+* Codenarc 0.18 
+* Fixtures 1.2 
+* Functional Test Development 0.9.4 
+* Geb 0.9.0-RC-1 
+* Greenmail 1.3.4 
+* Guard 1.0.7 
+* Remote Control 1.4
+* Selenium Webdriver 2.30.0
+* Spock 0.7
