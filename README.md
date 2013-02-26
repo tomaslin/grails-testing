@@ -11,7 +11,7 @@ Differences from Core Project
 
 Plugins
 -------
-
+* Auto-test 1.0.1
 * Betamax 1.1.2
 * Build Test Data 2.0.4 
 * Codenarc 0.18 
