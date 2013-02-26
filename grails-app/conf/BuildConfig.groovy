@@ -47,8 +47,8 @@ grails.project.dependency.resolution = {
         test "org.seleniumhq.selenium:selenium-ie-driver:$seleniumVersion"
         test "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
         test "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
-
-        // runtime 'mysql:mysql-connector-java:5.1.20'
+		test "org.gebish:geb-spock:0.9.0-RC-1"
+		// runtime 'mysql:mysql-connector-java:5.1.20'
     }
 
     plugins {
