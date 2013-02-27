@@ -47,8 +47,8 @@ grails.project.dependency.resolution = {
         test "org.seleniumhq.selenium:selenium-ie-driver:$seleniumVersion"
         test "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
         test "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
-		test "org.gebish:geb-spock:0.9.0-RC-1"
-		// runtime 'mysql:mysql-connector-java:5.1.20'
+        test "org.gebish:geb-spock:0.9.0-RC-1"
+        // runtime 'mysql:mysql-connector-java:5.1.20'
     }
 
     plugins {
@@ -75,6 +75,7 @@ grails.project.dependency.resolution = {
         test ":geb:0.9.0-RC-1"
         test ":greenmail:1.3.4"
         test ":guard:1.0.7"
+        test ":improx:0.2"
         test ":remote-control:1.4"
         test(":spock:0.7") {
             exclude "spock-grails-support"
