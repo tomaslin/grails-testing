@@ -76,6 +76,7 @@ grails.project.dependency.resolution = {
         test ":greenmail:1.3.4"
         test ":guard:1.0.7"
         test ":improx:0.2"
+        test ":plastic-criteria:0.6"
         test ":remote-control:1.4"
         test(":spock:0.7") {
             exclude "spock-grails-support"

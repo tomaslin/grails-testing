@@ -21,6 +21,7 @@ Plugins
 * Greenmail 1.3.4 
 * Guard 1.0.7 
 * Improx 0.2
+* Plastic Criteria 0.6
 * Remote Control 1.4
 * Selenium Webdriver 2.30.0
 * Spock 0.7
