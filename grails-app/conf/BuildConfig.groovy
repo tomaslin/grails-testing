@@ -9,7 +9,7 @@ grails.project.source.level = 1.6
 //   run: [maxMemory:1024, minMemory:64, debug:false, maxPerm:256]
 //]
 
-def seleniumVersion = '2.30.0'
+def seleniumVersion = '2.31.0'
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -46,8 +46,12 @@ grails.project.dependency.resolution = {
         test "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
         test "org.seleniumhq.selenium:selenium-ie-driver:$seleniumVersion"
         test "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
+        test "org.seleniumhq.selenium:selenium-remote-driver:$seleniumVersion"
+        test( "com.github.detro.ghostdriver:phantomjsdriver:1.0.3" ) {
+            transitive = false
+        }
         test "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
-        test "org.gebish:geb-spock:0.9.0-RC-1"
+        test "org.gebish:geb-spock:0.9.0"
         // runtime 'mysql:mysql-connector-java:5.1.20'
     }
 
