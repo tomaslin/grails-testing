@@ -76,7 +76,7 @@ grails.project.dependency.resolution = {
         test ":codenarc:0.18"
         test ":fixtures:1.2"
         test ":functional-test-development:0.9.4"
-        test ":geb:0.9.0-RC-1"
+        test ":geb:0.9.0"
         test ":greenmail:1.3.4"
         test ":guard:1.0.7"
         test ":improx:0.2"
