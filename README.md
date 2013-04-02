@@ -17,7 +17,7 @@ Plugins
 * Codenarc 0.18 
 * Fixtures 1.2 
 * Functional Test Development 0.9.4 
-* Geb 0.9.0-RC-1 
+* Geb 0.9.0
 * Greenmail 1.3.4 
 * Guard 1.0.7 
 * Improx 0.2
